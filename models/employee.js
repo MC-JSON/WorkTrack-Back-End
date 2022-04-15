@@ -11,19 +11,19 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Employee.belongsTo(models.Business, {
         foreignKey: 'businessId',
-        as: 'employee',
+        as: 'businessEmployee',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
       Employee.belongsTo(models.Log, {
         foreignKey: 'logId',
-        as: 'employee',
+        as: 'logEmployee',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
       Employee.belongsTo(models.Job, {
         foreignKey: 'jobId',
-        as: 'employee',
+        as: 'jobEmployee',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })

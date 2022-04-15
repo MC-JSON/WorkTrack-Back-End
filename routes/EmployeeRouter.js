@@ -1,10 +1,10 @@
 const Router = require('express').Router()
-const controller = require('../controllers/EmployeeRouter')
+const controller = require('../controllers/EmployeeController')
 
 Router.get('/:businessId', controller.GetEmployees)
-Router.get('/:businessId/:employeeId', controller.GetEmployee)
+Router.get('/:employeeId', controller.GetEmployee)
 Router.post('/:businessId', controller.CreateEmployee)
-Router.put('/:businessId/:employeeId', controller.UpdateEmployee)
-Router.delete('/:businessId/:employeeId', controller.DestroyEmployee)
+Router.put('/:employeeId', controller.UpdateEmployee)
+Router.delete('/:employeeId', controller.DestroyEmployee)
 
 module.exports = Router
