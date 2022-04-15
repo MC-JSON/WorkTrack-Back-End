@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         onUpdate: 'CASCADE'
       })
       Employee.belongsTo(models.Job, {
-        foreignKey: 'jobTitleId',
+        foreignKey: 'jobId',
         as: 'employee',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
@@ -34,13 +34,13 @@ module.exports = (sequelize, DataTypes) => {
       employeeName: DataTypes.STRING,
       // employeeEmail: DataTypes.STRING,
       // employeePassword: DataTypes.STRING,
-      jobTitleId: {
+      jobId: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        field: 'jobTitleId',
+        field: 'jobId',
         onDelete: 'CASCADE',
         references: {
-          model: 'jobTitles',
+          model: 'jobs',
           key: 'id'
         }
       },
