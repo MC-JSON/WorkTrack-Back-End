@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frankmarra/WorkTrack-BackEnd.git"
+    "url": "git+https://github.com/MC-JSON/WorkTrack-BackEnd.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frankmarra/WorkTrack-BackEnd/issues"
+    "url": "https://github.com/MC-JSON/WorkTrack-BackEnd/issues"
   },
-  "homepage": "https://github.com/frankmarra/WorkTrack-BackEnd#readme",
+  "homepage": "https://github.com/MC-JSON/WorkTrack-BackEnd#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
