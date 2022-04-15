@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
       })
       Log.hasMany(models.Employee, {
         foreignKey: 'logId',
-        as: 'employees',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
