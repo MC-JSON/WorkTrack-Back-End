@@ -17,13 +17,13 @@ module.exports = {
       // employeePassword: {
       //   type: Sequelize.STRING
       // },
-      jobTitleId: {
+      jobId: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        field: 'jobTitleId',
+        field: 'jobId',
         onDelete: 'CASCADE',
         references: {
-          model: 'jobTitles',
+          model: 'jobs',
           key: 'id'
         }
       },

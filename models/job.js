@@ -9,6 +9,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Job.hasMany(models.Employee, {
+        foreignKey: 'jobId',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
       Job.belongsTo(models.Business, {
         foreignKey: 'businessId',
         as: 'job',
