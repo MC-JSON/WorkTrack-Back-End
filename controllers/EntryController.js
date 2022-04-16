@@ -19,13 +19,20 @@ const GetAllBusinessEntries = async (req, res) => {
   }
 }
 
-// const GetAllBusinessEntriesByDay = async (req, res) => {
-//   try {
-
-//   } catch (error) {
-
-//   }
-// }
+const GetBusinessEntriesByDay = async (req, res) => {
+  try {
+    let logId = parseInt(req.params.log_id)
+    let month = parseInt(req.params.month)
+    let day = parseInt(req.params.day)
+    let year = parseInt(req.params.year)
+    const entries = await Entry.findAll({
+      where: { logId: logId, dateMonth: month, dateDay: day, dateYear: year }
+    })
+    res.send(entries)
+  } catch (error) {
+    throw error
+  }
+}
 
 const CreateEntry = async (req, res) => {
   try {
@@ -67,6 +74,7 @@ const DestroyEntry = async (req, res) => {
 module.exports = {
   GetAllEntries,
   GetAllBusinessEntries,
+  GetBusinessEntriesByDay,
   CreateEntry,
   UpdateEntry,
   DestroyEntry
