@@ -14,10 +14,10 @@ const GetEmployees = async (req, res) => {
 
 const GetEmployee = async (req, res) => {
   try {
-    // let businessId = parseInt(req.params.business_id)
+    let businessId = parseInt(req.params.business_id)
     let employeeId = parseInt(req.params.employee_id)
     const employee = await Employee.findAll({
-      where: { id: employeeId }
+      where: { id: employeeId, businessId: businessId }
     })
     res.send(employee)
   } catch (error) {
@@ -28,8 +28,10 @@ const GetEmployee = async (req, res) => {
 const CreateEmployee = async (req, res) => {
   try {
     let businessId = parseInt(req.params.business_id)
+    let logId = parseInt(req.params.log_id)
     let newEmployee = {
       businessId,
+      logId,
       ...req.body
     }
     let employee = await Employee.create(newEmployee)
