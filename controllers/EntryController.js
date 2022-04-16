@@ -13,10 +13,20 @@ const GetAllBusinessEntries = async (req, res) => {
   try {
     let logId = parseInt(req.params.log_id)
     const entries = await Entry.findAll({ where: { logId: logId } })
+    res.send(entries)
   } catch (error) {
     throw error
   }
 }
+
+// const GetAllBusinessEntriesByDay = async (req, res) => {
+//   try {
+
+//   } catch (error) {
+
+//   }
+// }
+
 const CreateEntry = async (req, res) => {
   try {
     let logId = parseInt(req.params.log_id)
