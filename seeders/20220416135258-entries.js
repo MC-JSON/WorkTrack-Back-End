@@ -4,7 +4,9 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert('entries', [
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 1,
         employeeHours: 8,
         logId: 1,
@@ -12,7 +14,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 3,
         employeeHours: 8,
         logId: 1,
@@ -20,7 +24,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 4,
         employeeHours: 8,
         logId: 1,
@@ -28,7 +34,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 5,
         employeeHours: 4,
         logId: 1,
@@ -36,7 +44,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 7,
         employeeHours: 8,
         logId: 1,
@@ -44,7 +54,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 2,
         employeeHours: 8,
         logId: 1,
@@ -52,7 +64,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 4,
         employeeHours: 8,
         logId: 1,
@@ -60,7 +74,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 6,
         employeeHours: 8,
         logId: 1,
@@ -68,7 +84,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 1,
         employeeHours: 8,
         logId: 1,
@@ -76,7 +94,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 2,
         employeeHours: 8,
         logId: 1,
@@ -84,7 +104,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 4,
         employeeHours: 8,
         logId: 1,
@@ -92,7 +114,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 5,
         employeeHours: 4,
         logId: 1,
@@ -100,7 +124,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 7,
         employeeHours: 8,
         logId: 1,
@@ -108,7 +134,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 1,
         employeeHours: 8,
         logId: 1,
@@ -116,7 +144,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 2,
         employeeHours: 8,
         logId: 1,
@@ -124,7 +154,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 3,
         employeeHours: 8,
         logId: 1,
@@ -132,7 +164,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 6,
         employeeHours: 8,
         logId: 1,
@@ -140,7 +174,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 2,
         employeeHours: 8,
         logId: 1,
@@ -148,7 +184,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 4,
         employeeHours: 8,
         logId: 1,
@@ -156,7 +194,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 5,
         employeeHours: 4,
         logId: 1,
@@ -164,7 +204,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 7,
         employeeHours: 4,
         logId: 1,
@@ -172,7 +214,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 1,
         employeeHours: 8,
         logId: 1,
@@ -180,7 +224,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 4,
         employeeHours: 8,
         logId: 1,
@@ -188,7 +234,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 6,
         employeeHours: 8,
         logId: 1,
@@ -196,7 +244,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 7,
         employeeHours: 4,
         logId: 1,
@@ -204,7 +254,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 2,
         employeeHours: 8,
         logId: 1,
@@ -212,7 +264,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 3,
         employeeHours: 8,
         logId: 1,
@@ -220,7 +274,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 5,
         employeeHours: 8,
         logId: 1,
@@ -228,7 +284,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 7,
         employeeHours: 8,
         logId: 1,
@@ -236,7 +294,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 8,
         employeeHours: 8,
         logId: 2,
@@ -244,7 +304,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 9,
         employeeHours: 8,
         logId: 2,
@@ -252,7 +314,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 10,
         employeeHours: 8,
         logId: 2,
@@ -260,7 +324,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 12,
         employeeHours: 8,
         logId: 2,
@@ -268,7 +334,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 14,
         employeeHours: 8,
         logId: 2,
@@ -276,7 +344,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 16,
         employeeHours: 8,
         logId: 2,
@@ -284,7 +354,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 11,
         employeeHours: 8,
         logId: 2,
@@ -292,7 +364,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 12,
         employeeHours: 8,
         logId: 2,
@@ -300,7 +374,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 13,
         employeeHours: 8,
         logId: 2,
@@ -308,7 +384,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 15,
         employeeHours: 8,
         logId: 2,
@@ -316,7 +394,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 16,
         employeeHours: 8,
         logId: 2,
@@ -324,7 +404,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 8,
         employeeHours: 8,
         logId: 2,
@@ -332,7 +414,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 13,
         employeeHours: 8,
         logId: 2,
@@ -340,7 +424,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 14,
         employeeHours: 8,
         logId: 2,
@@ -348,7 +434,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 15,
         employeeHours: 8,
         logId: 2,
@@ -356,7 +444,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 16,
         employeeHours: 8,
         logId: 2,
@@ -364,7 +454,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 9,
         employeeHours: 8,
         logId: 2,
@@ -372,7 +464,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 14,
         employeeHours: 8,
         logId: 2,
@@ -380,7 +474,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 16,
         employeeHours: 8,
         logId: 2,
@@ -388,7 +484,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 8,
         employeeHours: 8,
         logId: 2,
@@ -396,7 +494,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 11,
         employeeHours: 8,
         logId: 2,
@@ -404,7 +504,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 12,
         employeeHours: 8,
         logId: 2,
@@ -412,7 +514,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 15,
         employeeHours: 8,
         logId: 2,
@@ -420,7 +524,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 16,
         employeeHours: 8,
         logId: 2,
@@ -428,7 +534,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 10,
         employeeHours: 8,
         logId: 2,
@@ -436,7 +544,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 11,
         employeeHours: 8,
         logId: 2,
@@ -444,7 +554,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 13,
         employeeHours: 8,
         logId: 2,
@@ -452,7 +564,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 14,
         employeeHours: 8,
         logId: 2,
@@ -460,7 +574,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 9,
         employeeHours: 8,
         logId: 2,
@@ -468,7 +584,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 11,
         employeeHours: 8,
         logId: 2,
@@ -476,7 +594,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 14,
         employeeHours: 8,
         logId: 2,
@@ -484,7 +604,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 15,
         employeeHours: 8,
         logId: 2,
@@ -492,7 +614,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 12,
         logId: 3,
@@ -500,7 +624,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 12,
         logId: 3,
@@ -508,7 +634,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 10,
         logId: 3,
@@ -516,7 +644,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 8,
         logId: 3,
@@ -524,7 +654,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 10,
         logId: 3,
@@ -532,7 +664,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 8,
         logId: 3,
@@ -540,7 +674,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 6,
         logId: 3,
@@ -548,7 +684,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 8,
         logId: 3,
@@ -556,7 +694,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 8,
         logId: 3,
@@ -564,7 +704,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 6,
         logId: 3,
@@ -572,7 +714,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 8,
         logId: 3,
@@ -580,7 +724,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 17,
         employeeHours: 8,
         logId: 3,
@@ -588,7 +734,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 18,
         employeeHours: 8,
         logId: 3,
@@ -596,7 +744,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 19,
         employeeHours: 8,
         logId: 4,
@@ -604,7 +754,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 22,
         employeeHours: 8,
         logId: 4,
@@ -612,7 +764,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 24,
         employeeHours: 8,
         logId: 4,
@@ -620,7 +774,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 20,
         employeeHours: 8,
         logId: 4,
@@ -628,7 +784,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 21,
         employeeHours: 8,
         logId: 4,
@@ -636,7 +794,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 22,
         employeeHours: 8,
         logId: 4,
@@ -644,7 +804,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 23,
         employeeHours: 8,
         logId: 4,
@@ -652,7 +814,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 19,
         employeeHours: 8,
         logId: 4,
@@ -660,7 +824,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 21,
         employeeHours: 8,
         logId: 4,
@@ -668,7 +834,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 23,
         employeeHours: 4,
         logId: 4,
@@ -676,7 +844,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 24,
         employeeHours: 4,
         logId: 4,
@@ -684,7 +854,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 19,
         employeeHours: 8,
         logId: 4,
@@ -692,7 +864,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 21,
         employeeHours: 4,
         logId: 4,
@@ -700,7 +874,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 22,
         employeeHours: 4,
         logId: 4,
@@ -708,7 +884,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 24,
         employeeHours: 8,
         logId: 4,
@@ -716,7 +894,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 20,
         employeeHours: 8,
         logId: 4,
@@ -724,7 +904,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 22,
         employeeHours: 8,
         logId: 4,
@@ -732,7 +914,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 23,
         employeeHours: 8,
         logId: 4,
@@ -740,7 +924,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 24,
         employeeHours: 8,
         logId: 4,
@@ -748,7 +934,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 19,
         employeeHours: 8,
         logId: 4,
@@ -756,7 +944,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 20,
         employeeHours: 8,
         logId: 4,
@@ -764,7 +954,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 23,
         employeeHours: 8,
         logId: 4,
@@ -772,7 +964,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 21,
         employeeHours: 8,
         logId: 4,
@@ -780,7 +974,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 22,
         employeeHours: 8,
         logId: 4,
@@ -788,7 +984,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 24,
         employeeHours: 8,
         logId: 4,
@@ -796,7 +994,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/16/2022',
+        dateMonth: 4,
+        dateDay: 16,
+        dateYear: 2022,
         employeeId: 25,
         employeeHours: 12,
         logId: 5,
@@ -804,7 +1004,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/17/2022',
+        dateMonth: 4,
+        dateDay: 17,
+        dateYear: 2022,
         employeeId: 26,
         employeeHours: 12,
         logId: 5,
@@ -812,7 +1014,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/18/2022',
+        dateMonth: 4,
+        dateDay: 18,
+        dateYear: 2022,
         employeeId: 27,
         employeeHours: 12,
         logId: 5,
@@ -820,7 +1024,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 25,
         employeeHours: 6,
         logId: 5,
@@ -828,7 +1034,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/19/2022',
+        dateMonth: 4,
+        dateDay: 19,
+        dateYear: 2022,
         employeeId: 27,
         employeeHours: 6,
         logId: 5,
@@ -836,7 +1044,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/20/2022',
+        dateMonth: 4,
+        dateDay: 20,
+        dateYear: 2022,
         employeeId: 26,
         employeeHours: 12,
         logId: 5,
@@ -844,7 +1054,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 25,
         employeeHours: 6,
         logId: 5,
@@ -852,7 +1064,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/21/2022',
+        dateMonth: 4,
+        dateDay: 21,
+        dateYear: 2022,
         employeeId: 27,
         employeeHours: 6,
         logId: 5,
@@ -860,7 +1074,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 26,
         employeeHours: 8,
         logId: 5,
@@ -868,7 +1084,9 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        entryDate: '4/22/2022',
+        dateMonth: 4,
+        dateDay: 22,
+        dateYear: 2022,
         employeeId: 25,
         employeeHours: 4,
         logId: 5,
