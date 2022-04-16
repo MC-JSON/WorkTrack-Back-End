@@ -28,10 +28,8 @@ const GetEmployee = async (req, res) => {
 const CreateEmployee = async (req, res) => {
   try {
     let businessId = parseInt(req.params.business_id)
-    let logId = parseInt(req.params.log_id)
     let newEmployee = {
       businessId,
-      logId,
       ...req.body
     }
     let employee = await Employee.create(newEmployee)

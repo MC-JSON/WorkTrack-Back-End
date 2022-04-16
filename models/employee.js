@@ -15,15 +15,20 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
-      Employee.belongsTo(models.Log, {
-        foreignKey: 'logId',
-        as: 'logEmployee',
-        onDelete: 'CASCADE',
-        onUpdate: 'CASCADE'
-      })
+      // Employee.belongsTo(models.Log, {
+      //   foreignKey: 'logId',
+      //   as: 'logEmployee',
+      //   onDelete: 'CASCADE',
+      //   onUpdate: 'CASCADE'
+      // })
       Employee.belongsTo(models.Job, {
         foreignKey: 'jobId',
         as: 'jobEmployee',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      })
+      Employee.hasMany(models.Entry, {
+        foreignKey: 'employeeId',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
@@ -53,17 +58,17 @@ module.exports = (sequelize, DataTypes) => {
           model: 'businesses',
           key: 'id'
         }
-      },
-      logId: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        field: 'logId',
-        onDelete: 'CASCADE',
-        references: {
-          model: 'logs',
-          key: 'id'
-        }
       }
+      // logId: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: false,
+      //   field: 'logId',
+      //   onDelete: 'CASCADE',
+      //   references: {
+      //     model: 'logs',
+      //     key: 'id'
+      //   }
+      // }
     },
     {
       sequelize,

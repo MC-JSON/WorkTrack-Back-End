@@ -14,8 +14,8 @@ const CreateLog = async (req, res) => {
   try {
     let businessId = parseInt(req.params.business_id)
     let newLog = {
-      businessId,
-      ...req.body
+      businessId
+      // ...req.body
     }
     let log = await Log.create(newLog)
     res.send(log)

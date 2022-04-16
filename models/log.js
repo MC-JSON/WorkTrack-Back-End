@@ -15,7 +15,12 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
       })
-      Log.hasMany(models.Employee, {
+      // Log.hasMany(models.Employee, {
+      //   foreignKey: 'logId',
+      //   onDelete: 'CASCADE',
+      //   onUpdate: 'CASCADE'
+      // })
+      Log.hasMany(models.Entry, {
         foreignKey: 'logId',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE'
@@ -24,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Log.init(
     {
-      logDate: DataTypes.STRING,
+      // logDate: DataTypes.STRING,
       // employeeId: {
       //   type: DataTypes.INTEGER,
       //   allowNull: false,
@@ -35,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
       //     key: 'id'
       //   }
       // },
-      employeeHours: DataTypes.INTEGER,
+      // employeeHours: DataTypes.INTEGER,
       businessId: {
         type: DataTypes.INTEGER,
         allowNull: false,

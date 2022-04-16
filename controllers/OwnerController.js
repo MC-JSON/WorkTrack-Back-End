@@ -1,4 +1,4 @@
-const { Owner } = require('../models')
+const { Owner, Business } = require('../models')
 
 const GetOwner = async (req, res) => {
   try {
@@ -14,6 +14,18 @@ const GetOwners = async (req, res) => {
   try {
     const owners = await Owner.findAll()
     res.send(owners)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetOwnerBusinesses = async (req, res) => {
+  try {
+    let ownerId = parseInt(req.params.owner_id)
+    const businesses = await Business.findAll({
+      where: [{ ownerId: ownerId }]
+    })
+    res.send(businesses)
   } catch (error) {
     throw error
   }
@@ -57,6 +69,7 @@ const DestroyOwner = async (req, res) => {
 module.exports = {
   GetOwner,
   GetOwners,
+  GetOwnerBusinesses,
   CreateOwner,
   UpdateOwner,
   DestroyOwner

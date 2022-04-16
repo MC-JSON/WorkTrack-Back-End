@@ -1,17 +1,5 @@
 const { Business } = require('../models')
 
-const GetBusinesses = async (req, res) => {
-  try {
-    let ownerId = parseInt(req.params.owner_id)
-    const businesses = await Business.findAll({
-      where: [{ ownerId: ownerId }]
-    })
-    res.send(businesses)
-  } catch (error) {
-    throw error
-  }
-}
-
 const GetBusiness = async (req, res) => {
   try {
     // let ownerId = parseInt(req.params.owner_id)
@@ -67,7 +55,6 @@ const DestroyBusiness = async (req, res) => {
 }
 
 module.exports = {
-  GetBusinesses,
   GetBusiness,
   CreateBusiness,
   UpdateBusiness,
