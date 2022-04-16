@@ -3,6 +3,10 @@ const middleware = require('../middleware')
 
 const Login = async (req, res) => {
   try {
+    const owner = await Owner.findOne({
+      where: { ownerEmail: req.body.email },
+      raw: true
+    })
   } catch (error) {
     throw error
   }
