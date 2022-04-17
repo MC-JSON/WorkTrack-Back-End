@@ -1,4 +1,5 @@
 const { Entry } = require('../models')
+const { Op } = require('sequelize')
 
 const GetAllEntries = async (req, res) => {
   try {
@@ -27,6 +28,76 @@ const GetBusinessEntriesByDay = async (req, res) => {
     let year = parseInt(req.params.year)
     const entries = await Entry.findAll({
       where: { logId: logId, dateMonth: month, dateDay: day, dateYear: year }
+    })
+    res.send(entries)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetBusinessEntriesByMonth = async (req, res) => {
+  try {
+    let logId = parseInt(req.params.log_id)
+    let month = parseInt(req.params.month)
+    let year = parseInt(req.params.year)
+    const entries = await Entry.findAll({
+      where: { logId: logId, dateMonth: month, dateYear: year }
+    })
+    res.send(entries)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetBusinessEntriesByYear = async (req, res) => {
+  try {
+    let logId = parseInt(req.params.log_id)
+    let year = parseInt(req.params.year)
+    const entries = await Entry.findAll({
+      where: { logId: logId, dateYear: year }
+    })
+    res.send(entries)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetEntriesByDateRange = async (req, res) => {
+  try {
+    let logId = parseInt(req.params.log_id)
+    let search = req.query
+    let startMonth = parseInt(search.startMonth)
+    let startDay = parseInt(search.startDay)
+    let startYear = parseInt(search.startYear)
+    let endMonth = parseInt(search.endMonth)
+    let endDay = parseInt(search.endDay)
+    let endYear = parseInt(search.endYear)
+    const entries = await Entry.findAll({
+      where: {
+        dateMonth: {
+          [Op.between]: { startMonth, endMonth }
+        },
+        dateDay: {
+          [Op.between]: { startDay, endDay }
+        },
+        dateYear: {
+          [Op.between]: { startYear, endYear }
+        },
+        logId: logId
+      }
+    })
+    res.send(entries)
+  } catch (error) {
+    throw error
+  }
+}
+
+const GetEntriesForEmployee = async (req, res) => {
+  try {
+    let logId = parseInt(req.params.log_id)
+    let employeeId = parseInt(req.params.employee_id)
+    const entries = await Entry.findAll({
+      where: { logId: logId, employeeId: employeeId }
     })
     res.send(entries)
   } catch (error) {
@@ -75,6 +146,10 @@ module.exports = {
   GetAllEntries,
   GetAllBusinessEntries,
   GetBusinessEntriesByDay,
+  GetBusinessEntriesByMonth,
+  GetBusinessEntriesByYear,
+  GetEntriesByDateRange,
+  GetEntriesForEmployee,
   CreateEntry,
   UpdateEntry,
   DestroyEntry
