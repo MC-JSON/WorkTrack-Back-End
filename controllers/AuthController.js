@@ -18,7 +18,7 @@ const Login = async (req, res) => {
       let token = middleware.createToken(payload)
       return res.send({ owner: payload, token })
     }
-    res.status(401).send({ status: 'Error', msg: 'Unauthorized'})
+    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
   } catch (error) {
     throw error
   }
@@ -35,7 +35,12 @@ const Register = async (req, res) => {
   }
 }
 
+const CheckSession = async (req, res) => {
+  const { payload } = res.locals
+  res.send(payload)
+}
 module.exports = {
   Login,
-  Register
+  Register,
+  CheckSession
 }
