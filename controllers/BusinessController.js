@@ -7,7 +7,7 @@ const GetBusiness = async (req, res) => {
     const business = await Business.findAll({
       where: { id: businessId }
     })
-    res.send(business)
+    return res.send(business)
   } catch (error) {
     throw error
   }
@@ -21,7 +21,7 @@ const CreateBusiness = async (req, res) => {
       ownerId
     }
     let business = await Business.create(newBusiness)
-    res.send(business)
+    return res.send(business)
   } catch (error) {
     throw error
   }
@@ -35,7 +35,7 @@ const UpdateBusiness = async (req, res) => {
       where: { id: businessId },
       returning: true
     })
-    res.send(updatedBusiness)
+    return res.send(updatedBusiness)
   } catch (error) {
     throw error
   }
@@ -46,7 +46,7 @@ const DestroyBusiness = async (req, res) => {
     // let ownerId = parseInt(req.params.owner_id)
     let businessId = parseInt(req.params.business_id)
     await Business.destroy({ where: { id: businessId } })
-    res.send({
+    return res.send({
       message: `Business with id of ${businessId} has been destroyed.`
     })
   } catch (error) {
