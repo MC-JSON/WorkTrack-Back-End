@@ -27,9 +27,9 @@ const verifyToken = (req, res, next) => {
     if (payload) {
       return next()
     }
-    res.status(401).send({ status: 'Error', msg: 'Unauthorized'})
+    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
   } catch (error) {
-    res.status(401).send({ status: 'Error', msg: 'Unauthorized'})
+    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
   }
 }
 
