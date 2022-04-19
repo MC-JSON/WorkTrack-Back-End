@@ -7,10 +7,20 @@ const JobRouter = require('./JobRouter')
 const EntryRouter = require('./EntryRouter')
 const AuthRouter = require('./AuthRouter')
 // const controller = require('../controllers/OwnerController')
-// const middleware = require('../middleware')
+const middleware = require('../middleware')
+const controller = require('../controllers/AuthController')
 
-Router.use('/Owners', OwnerRouter)
-Router.use('/Businesses', BusinessRouter)
+
+Router.use('/Owners', OwnerRouter,
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.CheckSession
+)
+Router.use('/Businesses', BusinessRouter,
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.CheckSession
+)
 Router.use('/Logs', LogRouter)
 Router.use('/Employees', EmployeeRouter)
 Router.use('/Jobs', JobRouter)
