@@ -4,9 +4,12 @@ const middleware = require('../middleware')
 const Login = async (req, res) => {
   try {
     const owner = await Owner.findOne({
+
       where: { ownerEmail: req.body.ownerEmail },
       raw: true
+
     })
+
     if (
       owner &&
       (await middleware.comparePassword(owner.ownerPasswordDigest, req.body.ownerPassword))
@@ -18,7 +21,7 @@ const Login = async (req, res) => {
       let token = middleware.createToken(payload)
       return res.send({ owner: payload, token })
     }
-    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
+    res.status(401).send({ status: 'Error', msg: 'Unauthosrized' })
   } catch (error) {
     throw error
   }
