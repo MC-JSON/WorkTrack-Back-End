@@ -1,6 +1,7 @@
 const { Owner, Business } = require('../models')
 
 const GetOwner = async (req, res) => {
+  console.log('GETOWNER')
   try {
     let ownerId = parseInt(req.params.owner_id)
     const owner = await Owner.findByPk(ownerId)
@@ -20,6 +21,7 @@ const GetOwners = async (req, res) => {
 }
 
 const GetOwnerBusinesses = async (req, res) => {
+  console.log('getownerbusinesses')
   try {
     let ownerId = parseInt(req.params.owner_id)
     const businesses = await Business.findAll({
