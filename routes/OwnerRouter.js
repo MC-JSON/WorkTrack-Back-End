@@ -8,8 +8,8 @@ Router.get('/:owner_id',
   controller.GetOwner)
 Router.get('/', controller.GetOwners)
 Router.get('/:owner_id/businesses',
-  middleware.stripToken,
-  middleware.verifyToken,
+  // middleware.stripToken,
+  // middleware.verifyToken,
   controller.GetOwnerBusinesses
 
 )
