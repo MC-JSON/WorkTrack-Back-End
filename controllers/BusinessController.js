@@ -2,7 +2,6 @@ const { Business } = require('../models')
 
 const GetBusiness = async (req, res) => {
   try {
-    // let ownerId = parseInt(req.params.owner_id)
     let businessId = parseInt(req.params.business_id)
     const business = await Business.findAll({
       where: { id: businessId }
@@ -29,7 +28,6 @@ const CreateBusiness = async (req, res) => {
 
 const UpdateBusiness = async (req, res) => {
   try {
-    // let ownerId = parseInt(req.params.owner_id)
     let businessId = parseInt(req.params.business_id)
     let updatedBusiness = await Business.update(req.body, {
       where: { id: businessId },
@@ -43,7 +41,6 @@ const UpdateBusiness = async (req, res) => {
 
 const DestroyBusiness = async (req, res) => {
   try {
-    // let ownerId = parseInt(req.params.owner_id)
     let businessId = parseInt(req.params.business_id)
     await Business.destroy({ where: { id: businessId } })
     return res.send({
