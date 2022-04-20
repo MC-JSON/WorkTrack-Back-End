@@ -1,5 +1,5 @@
 const { Entry } = require('../models')
-const { Op } = require('sequelize')
+const { Op, Sequelize } = require('sequelize')
 
 const GetAllEntries = async (req, res) => {
   try {
@@ -75,6 +75,7 @@ const GetEntriesByDateRange = async (req, res) => {
         },
         logId: logId
       }
+      // attributes: [logId, [Sequelize.fn('sum', Sequelize.col('employeeHours'))]]
     })
     res.send(entries)
   } catch (error) {
