@@ -2,7 +2,6 @@ const { Job } = require('../models')
 
 const GetJobs = async (req, res) => {
   try {
-    // let ownerId = parseInt(req.params.owner_id)
     let businessId = parseInt(req.params.business_id)
     const jobs = await Job.findAll({ where: { businessId: businessId } })
     res.send(jobs)

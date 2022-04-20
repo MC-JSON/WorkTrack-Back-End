@@ -25,9 +25,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Entry.init(
     {
-      dateMonth: DataTypes.INTEGER,
-      dateDay: DataTypes.INTEGER,
-      dateYear: DataTypes.INTEGER,
+      date: DataTypes.DATEONLY,
       employeeId: {
         type: DataTypes.INTEGER,
         allowNull: false,

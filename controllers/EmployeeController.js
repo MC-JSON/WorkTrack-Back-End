@@ -41,7 +41,6 @@ const CreateEmployee = async (req, res) => {
 
 const UpdateEmployee = async (req, res) => {
   try {
-    // let businessId = parseInt(req.params.business_id)
     let employeeId = parseInt(req.params.employee_id)
     let updatedEmployee = await Employee.update(req.body, {
       where: { id: employeeId }
@@ -54,7 +53,6 @@ const UpdateEmployee = async (req, res) => {
 
 const DestroyEmployee = async (req, res) => {
   try {
-    // let businessId = parseInt(req.params.business_id)
     let employeeId = parseInt(req.params.employee_id)
     await Employee.destroy({
       where: { id: employeeId }
