@@ -64,24 +64,14 @@ const GetBusinessEntriesByYear = async (req, res) => {
 
 const GetEntriesByDateRange = async (req, res) => {
   let logId = parseInt(req.params.log_id)
-  let firstMonth = parseInt(req.query.firstMonth)
-  let firstDay = parseInt(req.query.firstDay)
-  let firstYear = parseInt(req.query.firstYear)
-  let lastMonth = parseInt(req.query.lastMonth)
-  let lastDay = parseInt(req.query.lastDay)
-  let lastYear = parseInt(req.query.lastYear)
+  let startDate = req.query.startDate
+  let endDate = req.query.endDate
 
   try {
     const entries = await Entry.findAll({
       where: {
-        dateMonth: {
-          [Op.between]: [firstMonth, lastMonth]
-        },
-        dateDay: {
-          [Op.between]: [firstDay, lastDay]
-        },
-        dateYear: {
-          [Op.between]: [firstYear, lastYear]
+        date: {
+          [Op.between]: [startDate, endDate]
         },
         logId: logId
       }
@@ -105,34 +95,17 @@ const GetAllEntriesForEmployee = async (req, res) => {
   }
 }
 
-// const GetEntriesForEmployeeByDay = async (req,res) => {
-//   try {
-//     let employeeId = parseInt(req.params.employee_id)
-//   } catch (error) {
-
-//   }
-// }
-
 const GetEmployeeEntriesByDateRange = async (req, res) => {
   let logId = parseInt(req.params.log_id)
   let employeeId = parseInt(req.params.employee_id)
-  let firstMonth = parseInt(req.query.firstMonth)
-  let firstDay = parseInt(req.query.firstDay)
-  let firstYear = parseInt(req.query.firstYear)
-  let lastMonth = parseInt(req.query.lastMonth)
-  let lastDay = parseInt(req.query.lastDay)
-  let lastYear = parseInt(req.query.lastYear)
+  let startDate = req.query.startDate
+  let endDate = req.query.endDate
+
   try {
     const entries = await Entry.findAll({
       where: {
-        dateMonth: {
-          [Op.between]: [firstMonth, lastMonth]
-        },
-        dateDay: {
-          [Op.between]: [firstDay, lastDay]
-        },
-        dateYear: {
-          [Op.between]: [firstYear, lastYear]
+        date: {
+          [Op.between]: [startDate, endDate]
         },
         logId: logId,
         employeeId: employeeId

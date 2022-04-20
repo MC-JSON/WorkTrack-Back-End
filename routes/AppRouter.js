@@ -6,9 +6,9 @@ const EmployeeRouter = require('./EmployeeRouter')
 const JobRouter = require('./JobRouter')
 const EntryRouter = require('./EntryRouter')
 const AuthRouter = require('./AuthRouter')
-// const controller = require('../controllers/OwnerController')
 const middleware = require('../middleware')
 const controller = require('../controllers/AuthController')
+
 
 
 Router.use('/Owners', OwnerRouter,
@@ -26,6 +26,5 @@ Router.use('/Employees', EmployeeRouter)
 Router.use('/Jobs', JobRouter)
 Router.use('/Entries', EntryRouter)
 Router.use('/auth', AuthRouter)
-
 
 module.exports = Router

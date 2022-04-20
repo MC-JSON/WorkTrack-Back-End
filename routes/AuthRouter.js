@@ -4,16 +4,11 @@ const middleware = require('../middleware')
 
 Router.post('/login', controller.Login)
 Router.post('/register', controller.Register)
-Router.get('/session',
+Router.get(
+  '/session',
   middleware.stripToken,
   middleware.verifyToken,
   controller.CheckSession
 )
-// router.put(
-//   '/profile',
-//   middleware.stripToken,
-//   middleware.verifyToken,
-//   controller.UpdatePassword
-// )
 
 module.exports = Router
