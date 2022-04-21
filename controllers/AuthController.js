@@ -4,12 +4,13 @@ const middleware = require('../middleware')
 const Login = async (req, res) => {
   try {
     const owner = await Owner.findOne({
-
+      
       where: { ownerEmail: req.body.ownerEmail },
       raw: true
-
+      
     })
-
+    console.log(owner)
+    
     if (
       owner &&
       (await middleware.comparePassword(owner.ownerPasswordDigest, req.body.ownerPassword))
