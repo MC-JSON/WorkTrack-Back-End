@@ -1,5 +1,6 @@
 const { Entry } = require('../models')
 const { Op, Sequelize } = require('sequelize')
+// const sequelize = new Sequelize('postgres')
 
 const GetAllEntries = async (req, res) => {
   try {
@@ -74,10 +75,18 @@ const GetEntriesByDateRange = async (req, res) => {
           [Op.between]: [startDate, endDate]
         },
         logId: logId
-      }
-      // attributes: [logId, [Sequelize.fn('sum', Sequelize.col('employeeHours'))]]
+      },
+      order: [['date', 'DESC']]
     })
-    res.send(entries)
+    const sum = await Entry.sum('employeeHours', {
+      where: {
+        date: {
+          [Op.between]: [startDate, endDate]
+        },
+        logId: logId
+      }
+    })
+    res.json({ entries, sum })
   } catch (error) {
     throw error
   }
