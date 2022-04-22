@@ -9,14 +9,16 @@ const AuthRouter = require('./AuthRouter')
 const middleware = require('../middleware')
 const controller = require('../controllers/AuthController')
 
-
-
-Router.use('/Owners', OwnerRouter,
+Router.use(
+  '/Owners',
+  OwnerRouter,
   middleware.stripToken,
   middleware.verifyToken,
   controller.CheckSession
 )
-Router.use('/Businesses', BusinessRouter,
+Router.use(
+  '/Businesses',
+  BusinessRouter,
   middleware.stripToken,
   middleware.verifyToken,
   controller.CheckSession

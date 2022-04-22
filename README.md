@@ -2,13 +2,14 @@
 
 ### Date: 4/22/2022
 
-### Developers: 
+### Developers:
 
-### Frank Marra  [GitHub](https://github.com/frankmarra) | [LinkedIn](https://www.linkedin.com/in/frankrmarra/)
+### Frank Marra [GitHub](https://github.com/frankmarra) | [LinkedIn](https://www.linkedin.com/in/frankrmarra/)
 
-### Jason McCoy  [GitHub](https://github.com/MC-JSON) | [LinkedIn](https://www.linkedin.com/in/jasonwmccoy/)
+### Jason McCoy [GitHub](https://github.com/MC-JSON) | [LinkedIn](https://www.linkedin.com/in/jasonwmccoy/)
 
-### Bryan Sanchez  [GitHub]() | [LinkedIn](https://www.https://www.linkedin.com/in/bryvn1xx/)
+### Bryan Sanchez [GitHub]() | [LinkedIn](https://www.https://www.linkedin.com/in/bryvn1xx/)
+
 ---
 
 - [Trello](https://trello.com/b/R3ERjgEi/worktrackapp)
@@ -16,7 +17,9 @@
 - [Link to Front-End](https://github.com/MC-JSON/WorkTrack-FrontEnd)
 
 ---
+
 ## Getting Started
+
 npm i
 
 ## Description
@@ -71,6 +74,7 @@ WorkTrack is a full-stack PERN application that uses SQL for managing data & Rea
 ## **Credits**
 
 ###
+
 - [Class_Wiki](https://github.com/SEI-R-2-22/class_wiki)
 - [FlexBoxFroggy](https://flexboxfroggy.com/)
 - [Developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
