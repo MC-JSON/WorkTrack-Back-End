@@ -11,10 +11,11 @@ module.exports = {
       employeeName: {
         type: Sequelize.STRING
       },
+      // FOR FUTURE UPDATE:
       // employeeEmail: {
       //   type: Sequelize.STRING
       // },
-      // employeePassword: {
+      // employeePasswordDigest: {
       //   type: Sequelize.STRING
       // },
       jobId: {
@@ -37,16 +38,6 @@ module.exports = {
           key: 'id'
         }
       },
-      // logId: {
-      //   type: Sequelize.INTEGER,
-      //   allowNull: false,
-      //   field: 'logId',
-      //   onDelete: 'CASCADE',
-      //   references: {
-      //     model: 'logs',
-      //     key: 'id'
-      //   }
-      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

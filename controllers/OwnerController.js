@@ -21,12 +21,10 @@ const GetOwners = async (req, res) => {
 }
 
 const GetOwnerBusinesses = async (req, res) => {
-  console.log('getownerbusinesses')
   try {
     let ownerId = parseInt(req.params.owner_id)
     const businesses = await Business.findAll({
       where: [{ ownerId: ownerId }]
-
     })
     res.send(businesses)
   } catch (error) {

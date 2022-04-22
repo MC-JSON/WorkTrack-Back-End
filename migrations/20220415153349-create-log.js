@@ -8,22 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      // logDate: {
-      //   type: Sequelize.STRING
-      // },
-      // employeeId: {
-      //   type: Sequelize.INTEGER,
-      //   allowNull: false,
-      //   field: 'employeeId',
-      //   onDelete: 'CASCADE',
-      //   references: {
-      //     model: 'employees',
-      //     key: 'id'
-      //   }
-      // },
-      // employeeHours: {
-      //   type: Sequelize.INTEGER
-      // },
       businessId: {
         type: Sequelize.INTEGER,
         allowNull: false,
