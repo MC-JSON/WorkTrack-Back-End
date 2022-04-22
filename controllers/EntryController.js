@@ -21,48 +21,6 @@ const GetAllBusinessEntries = async (req, res) => {
   }
 }
 
-const GetBusinessEntriesByDay = async (req, res) => {
-  try {
-    let logId = parseInt(req.params.log_id)
-    let month = parseInt(req.params.month)
-    let day = parseInt(req.params.day)
-    let year = parseInt(req.params.year)
-    const entries = await Entry.findAll({
-      where: { logId: logId, dateMonth: month, dateDay: day, dateYear: year }
-    })
-    res.send(entries)
-  } catch (error) {
-    throw error
-  }
-}
-
-const GetBusinessEntriesByMonth = async (req, res) => {
-  try {
-    let logId = parseInt(req.params.log_id)
-    let month = parseInt(req.params.month)
-    let year = parseInt(req.params.year)
-    const entries = await Entry.findAll({
-      where: { logId: logId, dateMonth: month, dateYear: year }
-    })
-    res.send(entries)
-  } catch (error) {
-    throw error
-  }
-}
-
-const GetBusinessEntriesByYear = async (req, res) => {
-  try {
-    let logId = parseInt(req.params.log_id)
-    let year = parseInt(req.params.year)
-    const entries = await Entry.findAll({
-      where: { logId: logId, dateYear: year }
-    })
-    res.send(entries)
-  } catch (error) {
-    throw error
-  }
-}
-
 const GetEntriesByDateRange = async (req, res) => {
   let logId = parseInt(req.params.log_id)
   let startDate = req.query.startDate
@@ -119,9 +77,18 @@ const GetEmployeeEntriesByDateRange = async (req, res) => {
         },
         logId: logId,
         employeeId: employeeId
+      },
+      order: [['date', 'DESC']]
+    })
+    const sum = await Entry.sum('employeeHours', {
+      where: {
+        date: {
+          [Op.between]: [startDate, endDate]
+        },
+        logId: logId
       }
     })
-    res.send(entries)
+    res.json({ entries, sum })
   } catch (error) {
     throw error
   }
@@ -167,9 +134,6 @@ const DestroyEntry = async (req, res) => {
 module.exports = {
   GetAllEntries,
   GetAllBusinessEntries,
-  GetBusinessEntriesByDay,
-  GetBusinessEntriesByMonth,
-  GetBusinessEntriesByYear,
   GetEntriesByDateRange,
   GetAllEntriesForEmployee,
   GetEmployeeEntriesByDateRange,
